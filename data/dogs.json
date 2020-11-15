@@ -3,42 +3,62 @@
 [
     {
       "id": 1,
-      "name": "Affenpinscher"
+      "name": "Shih Tzu",
+      "description": "",
+      "img":"https://images.pexels.com/photos/936317/pexels-photo-936317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": 2,
-      "name": "Afghan Hound"
+      "name": "Rottweiler",
+      "description": "",
+      "img":"https://images.pexels.com/photos/170325/pexels-photo-170325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": 3,
-      "name": "African Hunting Dog"
+      "name": "Siberian Husky",
+      "description": "",
+      "img":"https://images.pexels.com/photos/3274988/pexels-photo-3274988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": 4,
-      "name": "Airedale Terrier"
+      "name": "Cocker Spaniel",
+      "description": "",
+      "img":"https://images.pexels.com/photos/1407718/pexels-photo-1407718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": 5,
-      "name": "Akbash Dog"
+      "name": "Cardigan Corgi",
+      "description": "",
+      "img":"https://images.pexels.com/photos/2737393/pexels-photo-2737393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": 6,
-      "name": "Akita"
+      "name": "Labrador",
+      "description": "",
+      "img":"https://images.pexels.com/photos/102508/pexels-photo-102508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": 7,
-      "name": "Alapaha Blue Blood Bulldog"
+      "name": "Doberman Pinscher",
+      "description": "",
+      "img":"https://images.pexels.com/photos/975413/pexels-photo-975413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": 8,
-      "name": "Alaskan Husky"
+      "name": "Beagle",
+      "description": "",
+      "img":"https://images.pexels.com/photos/452772/pexels-photo-452772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": 9,
-      "name": "Alaskan Malamute"
+      "name": "Canine",
+      "description": "",
+      "img":"https://images.pexels.com/photos/333083/pexels-photo-333083.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": 10,
-      "name": "American Bulldog"
+      "name": "Pitbull",
+      "description": "",
+      "img":"https://images.pexels.com/photos/2208743/pexels-photo-2208743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     }
   ]

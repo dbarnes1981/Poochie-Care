@@ -66,7 +66,7 @@
   <div class="container mb-5">
     <div class="container bg-transparent text-white mt-5 mb-5">
         <h1 class="display-4 text-center">What are we here for, you ask?</h1>
-        <p class="mt-4" id="our_goal">Our goal is to help our precious dogs maintain a healthy, vibrant and fulfilling life! <br>We strive to support any of our dog owners that may suffer from financial needs, in order to receive top care treatment for there loveable Poochies! This awesome community gives that to which you receive. Meaning, donations from owners, company affiliates and just people who care so much makes this happen for us, and you! Support our Community Today!</p>
+        <p class="mt-4" id="our_goal">Our goal is to help our precious dogs maintain a healthy, vibrant and fulfilling life! <br>We strive to support any of our dog owners that may suffer from financial needs, in order to receive top care treatment for there loveable Poochies! This awesome community gives to that to which you receive. Meaning, donations from pet owners, generous affliates and most importantly the community who care so much to make this happen for us, and you! Support our Community Today!</p>
       </div>
       <!-- Row Section -->
       <div class="row text-center">
@@ -90,37 +90,56 @@
         </div>
         </div>
     </div>
+
+    <div class="modal" id="bookingModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New Booking</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Please fill out the form below and we'll get back to you as soon as possible</p>
+            <form>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="form control" id="email"
+                placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="adults"></label>
+                <select class="form-control" id="adults">Number of Adults
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                  <label for="children"></label>
+                  <select class="form-control" id="children">Number of Children
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="requests">Addition Requests</label>
+                  <textarea id="requests" rows="3" class="form-control"></textarea>
+                </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit Request</button>
+            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
-  
-   
-  
-
-    
-
-      
-    
-    
-
-
-  
-
-  
-
-  
-
-    
-
-  
-  
-
-    
-  
-
-      
-        
-      
-
-
   <!-- <script src="app.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>

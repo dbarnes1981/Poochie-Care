@@ -15,9 +15,11 @@ function searchDog(e) {
   // Get search term
   const term = search.value;
 
+
+  
   // Check for empty
   if(term.trim()) {
-    fetch(`https://dog.ceo/api/breed/${term}/images`)
+    fetch(`https://dog.ceo/api/breeds/image/random/${term}`)
     .then(res => res.json())
     .then(data => {
       console.log(data.message);
