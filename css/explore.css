@@ -65,6 +65,10 @@
       margin-bottom: 0;
     }
 
+    #card_2 {
+      margin: 0 auto;
+    }
+
     btn, #search-btn {
       background: #44b5e2!important; 
       border: none;
@@ -83,6 +87,7 @@
       background: #fff!important;
       transition: 0.6s ease-in-out;
     }
+
 
     @media (max-width: 990px) {
       .navbar-brand {

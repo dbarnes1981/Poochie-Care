@@ -1,48 +1,70 @@
-const form = document.getElementById('searchForm'),
- input = document.getElementById('search'),
- results = document.getElementById('woof'),
- pic = document.getElementById('dog_pic'),
- info = document.getElementById('dog-details'),
- btn = document.getElementById('search-btn');
+const form = document.getElementById('searchForm');
+//  input = document.getElementById('search'),
+//  btn = document.getElementById('search-btn'),
+//  card_body = document.querySelector('.card');
 
-//  Search dog and fetch from API
-function searchDog(e) {
-  e.preventDefault();
-
-  // Clear single meal
-  // info.innerHTML = '';
-
-  // Get search term
-  const term = search.value;
+//  const apiURL = 'https://api.thedogapi.com/v1/images/search';
 
 
+//   async function searchDogs() {
+//     const res = await fetch(`${apiURL}`);
+//     const data = await res.json();
+//     console.log(data[0].breeds);
+// }
   
-  // Check for empty
-  if(term.trim()) {
-    fetch(`https://dog.ceo/api/breeds/image/random/${term}`)
-    .then(res => res.json())
-    .then(data => {
-      console.log(data.message);
-      results.innerHTML = `<h2>Search results for '${term}':</h2>`;
+// searchDogs();
 
-      if(data.message === null) {
-        results.innerHTML = `<p>There are no search results. Try again!</p>`;
-      } else {
-        results.innerHTML = data.message.map(m => `
-        <div class="dog">
-          <img src="${m.message}" />
-        </div>
-        `)
-        .join('');
-      }
-    });
-    // Clear search text
-    search.value = '';
-  } else {
-    alert('Please enter a search value');
-  }
-}
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const searchTerm = form.value;
+  const res = await fetch(`https://dog.ceo/api/breed/boxer/images`);
+  const data = await res.json();
+  console.log(data.message)
+  form.value = '';
+})
+
+// const makeImages = (shows) => {
+//   for (let result of shows) {
+//     if( result.show.image ) {
+//       const img = document.createElement('IMG');
+//       img.src = result.show.image.medium;
+//       document.body.append(img)
+//     }
+//   }
+// }
+
+
+//  function createBreedPic(picbreed) {
+//   document.getElementById("card_2").innerHTML = `
+//    <div class="card" id="card_2" style="width: 24rem;">
+//                 <img src="/images/second_pic.jpg" class="card-img-top">
+                
+//                 <div class="card-body">
+//                   <h5 class="card-title text-center">Card title</h5>
+//                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//                 </div>
+//                 <ul class="list-group list-group-flush text-center">
+//                   <li class="list-group-item">Cras justo odio</li>
+//                   <li class="list-group-item">Dapibus ac facilisis in</li>
+//                   <li class="list-group-item">Vestibulum at eros</li>
+//                 </ul>
+//               </div> 
+//   `;
+// }
+
 
 // Event listeners
-form.addEventListener('submit', searchDog);
+// form.addEventListener('submit', e => {
+//   e.preventDefault();
+
+//   // Get input text
+//  const userText = input.value.trim();
+
+//  if (!userText) {
+//    alert('Please type in a search term');
+//  } else {
+//   searchDogs(userText);
+//  }
+// });
+
 

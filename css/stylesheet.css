@@ -24,10 +24,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44b5e2', end
 }
 
 .navbar {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.5);
+  display: flex;
 }
+
 #navbarNav {
-  margin-left: 50%;
+  margin-left: 45%;
 }
 
 .fa-paw {
@@ -56,7 +58,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44b5e2', end
   font-size: 1.3em;
   font-weight: 100;
   color: #fff;
-  /* color: rgb(131, 149, 153); */
 }
 
 .nav-link:hover {
@@ -120,9 +121,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44b5e2', end
 @media (max-width: 500px) {
   .navbar-brand {
     margin-right: 41%;
+    font-size: 1.7rem;
+  }
+  .fa-paw {
+    font-size: 2.2rem;
+  }
+  .carousel img {
+    background-position:center;
   }
   .jumbotron h1 {
-    font-size: 3em;
+    font-size: 3.7rem;
   }
   .jumbotron  {
     margin-top: 30%;
@@ -160,6 +168,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44b5e2', end
   .navbar-brand {
     position: absolute;
     left: 81px;
+  }
+  .nav-link li {
+    /* display: flex!important;
+    flex-direction: column!important;
+    margin: 0!important; */
   }
   .row {
     display:flex;

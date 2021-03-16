@@ -74,12 +74,16 @@ body,html {
   font-style: italic;
 }
 
+@media (max-width: 500px) {
+  .container > .card {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
 @media (min-width: 500px) and (max-width: 991px) {
   .navbar-brand {
     position: absolute;
     left: 81px;
   } 
-  .card {
-    display: block;
-  }
 }
